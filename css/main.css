@@ -1,0 +1,89 @@
+/*
+	COLORS:
+	Scooter blue: #32C4DE;
+	Persimmon orange: #F55912;
+
+*/
+
+
+
+body {
+	background: blue;
+}
+
+header {
+	background-color: #32C4DE;
+	padding: 10px;
+	color: white;
+}
+
+header img {
+	width: 157px;
+}
+
+.call {
+	/*display: inline-block;*/
+	float: right;
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.hero {
+	height: 500px;
+	background: red;
+
+}
+
+.about {
+	background: #F55912;
+
+}
+
+.services {
+	background: #32C4DE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) { 
+	... 
+}
+
+
+@media (max-width: 768px) { 
+	... 
+}
+
+
+@media (max-width: 992px) { 
+	... 
+}
+
+
+@media (max-width: 1200px) { 
+	... 
+
+}
