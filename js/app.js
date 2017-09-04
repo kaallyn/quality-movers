@@ -8,7 +8,13 @@ $(window).scroll(function(e){
     parallax();
 });
 
+$(document).ready(function(e){
+  $('.top-btn').addClass('animated pulse');
+});
+
+
 $(document).ready(function(){
+
   $("a").on('click', function(event) {
 
     if (this.hash !== "") {
@@ -25,6 +31,31 @@ $(document).ready(function(){
   });
 });
 
-// $(document).ready( function() {
-//     $('#datePicker').val(new Date().toDateInputValue());
-// });​
+$(function () {
+        $(window).paroller();
+});
+
+// Scroll events
+jQuery(document).ready(function($){
+  var card = $('.check'),
+    offset = 1;
+
+  $(window).on('scroll', function(){
+    (!window.requestAnimationFrame) 
+      ? setTimeout(function(){ showBlocks(card, offset); }, 100)
+      : window.requestAnimationFrame(function(){ showBlocks(card, offset); });
+  });
+
+  function showBlocks(blocks, offset) {
+    blocks.each(function(){
+      ( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).hasClass('is-hidden') ) && $(this).removeClass('is-hidden').addClass('not-hidden');
+    });
+  }
+});
+
+
+
+
+
+console.log("      .--.   |V| \n     /    \\ _| / \n     q .. p \\ / \n      \\--/  // \n     __||__//\n    /.    _/ \n   // \\  / \n  //   || \n  \\\\  /  \\ \n   )\\|    | \n  / || || | \n  |/\\| || | \n     | || | \n     \\ || / \n   __/ || \\__ \n  \\____/\\____/ \n\n Greetings, Spectrum!");
+

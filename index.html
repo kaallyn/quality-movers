@@ -29,7 +29,7 @@
 
         <div class="col-sm-6 hero-box">
           <h1>Affordable Residential Movers</h1>
-          <a name="#contact" href="#contact" target="_top" class="btn">Get a Free Quote</a>
+          <a name="#contact" href="#contact" target="_top" class="btn  top-btn">Get a Free Quote</a>
         </div>
 
       </div>
@@ -69,25 +69,25 @@
                   <p>Some of our household moving services include, but are not limited to:</p>
                 <!-- </div> -->
               </div>
-              <div class="row serv-lists">
+              <div class="row serv-lists ">
                 <div class="col-xs-6 list-c1">
                   <ul class="services-list c1">
-                    <li class="check">Full-service Packing</li>
-                    <li class="check">Loading/Unloading</li>
-                    <li class="check">Furniture Protection</li>
-                    <li class="check">Free In-Home Consultation and Survey</li>
-                    <li class="check">Move Coordinator</li>
-                    <li class="check">Short- and Long-term Storage</li>
+                    <li class="check is-hidden">Full-service Packing</li>
+                    <li class="check is-hidden">Loading/Unloading</li>
+                    <li class="check is-hidden">Furniture Protection</li>
+                    <li class="check is-hidden">Free In-Home Consultation and Survey</li>
+                    <li class="check is-hidden">Move Coordinator</li>
+                    <li class="check is-hidden">Short- and Long-term Storage</li>
                   </ul>
                 </div>
                 <div class="col-xs-6 list-c2">
                   <ul class="services-list c2">
-                    <li class="check">Packing and Crating Options</li>
-                    <li class="check">Fragile Packing</li>
-                    <li class="check">Do-It-Yourself Packing</li>
-                    <li class="check">Vehicle Shipping</li>
-                    <li class="check">Assembly/Disassembly</li>
-                    <li class="check">Third Party Services</li>
+                    <li class="check is-hidden">Packing and Crating Options</li>
+                    <li class="check is-hidden">Fragile Packing</li>
+                    <li class="check is-hidden">Do-It-Yourself Packing</li>
+                    <li class="check is-hidden">Vehicle Shipping</li>
+                    <li class="check is-hidden">Assembly/Disassembly</li>
+                    <li class="check is-hidden">Third Party Services</li>
                   </ul>
                 </div>
               </div>
@@ -99,17 +99,19 @@
       <div class="divider-bg">
         <div class="divider-orange"></div>
       </div>
-      
+
+
       <a name="contact"></a>
       <a id="contact" class="anchor"></a>
-      <section class="contact" id="contact">
+      <section class="contact truck-bg" id="contact" data-paroller-factor="1.0"
+             data-paroller-direction="horizontal">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
-              <!-- <div class="col-sx-12"> -->
+
               <h2>Contact Quality Movers</h2>
               <p>Quality Movers is the household moving company you can depend on for your upcoming household moving needs. We work hard to guarantee the safety of your important items throughout your residential move. Get in touch with us today to plan your future household move or fill out our <span class="heavy">free</span> in-home moving estimate on our quick quote form.</p>
-              <!-- </div> -->
+
             </div>
           </div>
         </div>
@@ -122,35 +124,45 @@
 
                 <div class="form-group row">
                   <div class="form-item col-sm-6">
-                    <label for="formGroupExampleInput">Name:</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your name">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name" required >
                   </div>
 
                   <div class="form-item col-sm-6">
-                    <label for="example-tel-input" class="col-2 col-form-label">Phone:</label>
+                    <label for="tel-input" class="col-2 col-form-label ">Phone:</label>
                     <div class="col-10">
-                      <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input">
+                      <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="tel-input" required >
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group row">
                   <div class="form-item col-sm-6">
-                    <label for="exampleFormControlInput1">Email:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required >
                   </div>
                   <div class="form-item col-sm-6">
-                    <label for="example-datetime-local-input" class="col-2 col-form-label">Move Date and time:</label>
-                    <!-- <div class="col-10"> -->
-                      <input class="form-control" type="datetime-local" value="YYYY-MM-DDT13:45:00" id="example-datetime-local-input">
-                    <!-- </div> -->
-                  </div>
+                    <label for="example-datetime-local-input" class="col-2 col-form-label">Move Date:</label>
+                      <input class="form-control" type="date"  id="date" required >
                 </div>
+                </div>
+                
+
+                <!-- <div class="form-item col-sm-6">
+                    <label for="time" class="col-2 col-form-label">Move Time:</label>
+                      <input class="form-control" type="time"  id="time" required >
+                </div> -->
 
                 <div class="form-group row">
+
                   <div class="form-item col-sm-6">
-                    <label for="exampleFormControlSelect1">Move Type:</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <label for="time" class="col-2 col-form-label">Move Time:</label>
+                      <input class="form-control" type="time"  id="time" required >
+                  </div>
+
+                  <div class="form-item col-sm-6">
+                    <label for="move-type">Move Type:</label>
+                    <select class="form-control" id="move-type">
                       <option>Option 1</option>
                       <option>Option 2</option>
                       <option>Option 3</option>
@@ -159,21 +171,33 @@
                     </select>
                   </div>
 
-                  <div class="form-item col-sm-6">
-                    <label for="exampleFormControlSelect1">Move Size:</label>
-                    <select class="form-control" id="exampleFormControlSelect2">
+                  <!-- <div class="form-item col-sm-6">
+                    <label for="move-size">Move Size:</label>
+                    <select class="form-control" id="move-size">
                       <option>Option 1</option>
                       <option>Option 2</option>
                       <option>Option 3</option>
                       <option>Option 4</option>
                       <option>Option 5</option>
                     </select>
-                  </div>
+                  </div> -->
                 </div>
 
                 <div class="row">
-                  <div class="submit col-xs-6">
-                    <button type="submit" class="btn">Get Estimate</button>
+
+                  <div class="form-item col-sm-6">
+                    <label for="move-size">Move Size:</label>
+                    <select class="form-control" id="move-size">
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                    </select>
+                  </div>
+
+                  <div class="submit col-sm-6">
+                    <button type="submit" class="btn  bottom-btn">Get Estimate</button>
                   </div>
                 </div> 
 
@@ -181,18 +205,16 @@
             </div>
           </div>
         </form>
-        
-
       </section> 
 
       <footer>
         
         <div class="container-fluid">
           <div class="row">
-            <div class="copyright col-sm-3">
+            <div class="copyright col-xs-5">
               <p class="call">&copy; 2017 Quality Movers</p>
             </div>
-            <div class="call-us col-sm-9">
+            <div class="call-us col-xs-7">
               <p class="call">Call toll-free: 1-800-234-5678</p>
             </div>
           </div>
@@ -206,6 +228,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.paroller.js"></script>
+    <!-- <script src='js/form.js'></script> -->
     <script src='js/app.js'></script>
 
   </body>

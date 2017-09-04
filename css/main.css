@@ -2,6 +2,7 @@
 	COLORS:
 	Scooter blue: #32C4DE;
 	Persimmon orange: #F55912;
+	orange-red: e14313;
 
 	FONTS:
 	font-family: 'Teko', sans-serif;
@@ -15,12 +16,12 @@
 }*/
 
 body {
-	background: blue;
+	background: white;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	color: white;
 	line-height: 2.5rem;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	letter-spacing: .03em;
 }
 
@@ -34,7 +35,7 @@ h1, h2, h3, h4, ul {
 
 h2 {
 	font-family: 'Teko', sans-serif;
-	font-size: 5rem;
+	font-size: 6rem;
     /*text-align: center;*/
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -51,17 +52,20 @@ h2 {
 
 .btn {
 	box-shadow: 0 6px 0px #1E7685;
-	padding: 8px 36px 8px 36px;
+	padding: 10px 36px 10px 36px;
 	background: #32C4DE;
 	color: white;
 	border: none;
 	position: relative;
 	margin-bottom: 6px;
 	margin-top: 6px;
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	transition: pulse 300ms ease-in-out;
 }
 
 .btn:hover, .btn:focus, .btn:active {
-	box-shadow: 0 4px #1E7685;
+	box-shadow: 0 3px #1E7685;
     top: 2px;
     color: white;
     outline:none;
@@ -134,9 +138,48 @@ header {
 	transform: translate(-50%,-50%);
 	padding: 3em 2em;
 	max-width: 425px;
-
-
+	transition: all 300ms ease-in-out;
+	border-radius: 2px
 }
+
+.animated {
+  animation-duration: 500ms;
+  /*animation-fill-mode: both;*/
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
 
 .jumbotron h1 {
 	margin: 0 0 1rem 0;
@@ -144,8 +187,7 @@ header {
 	color: #F55912;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-size: 4rem;
-
+	font-size: 4.5rem;
 }
 
 /* parallax*/
@@ -221,6 +263,7 @@ header {
 
 .serv-lists {
 	padding-top: 2em;
+	transition: all 300ms ease-in-out;
 }
 
 ul {
@@ -234,6 +277,7 @@ li.check {
 	list-style-type: none;
 	line-height: 1.6rem;
 	padding-bottom: 20px;
+	transition: all 300ms ease-in-out;
 }
 .list-c1 {
 	/*background: pink;*/
@@ -289,8 +333,19 @@ label {
 
 
 .contact .btn {
-	margin-top: 50px;
+	margin-top: 4rem;
 	width: 100%;
+	background-color: #F55912;
+	box-shadow: 0 6px 0px #9D3915;
+
+}
+
+.contact .btn:hover, .contact .btn:focus, .contact .btn:active {
+	box-shadow: 0 3px #9D3915;
+/*    top: 2px;
+    color: white;
+    outline:none;*/
+
 }
 
 /* 	FOOTER 	*/
@@ -303,9 +358,39 @@ footer {
 }
 
 
+/* PATROLLER*/
+.card {
+	background: url(../images/truck-bg.png);
+}
+
+.truck-bg {
+	background: url(../images/truck-bg.png) no-repeat center;
+	background: url(../images/truck-bg-500-a32.png) no-repeat right;
+	background-size: 500px;
+	/*border: 2px solid red;*/
+}
 
 
 
+/* END PATROLLER*/
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.is-hidden-btn {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.not-hidden {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(1px);
+}
 
 
 
@@ -329,6 +414,17 @@ footer {
 	.bg {
 		background-position: 25% 32%;
 	}
+
+	h2 {
+	    font-family: 'Teko', sans-serif;
+	    font-size: 4rem;
+	    /* text-align: center; */
+	    text-transform: uppercase;
+	    margin-bottom: 1.5rem;
+	}
+	.jumbotron h1 {
+	    font-size: 3.5rem;
+	}
 }
 
 
@@ -345,6 +441,18 @@ footer {
 	.submit .col-xs-6 {
 		width: 100%;
 		background-color: red;
+	}
+
+	.call {
+		text-align: center;
+		width: 100%;
+		margin: 2px 0 2px 0;
+	}
+
+	.call-us, .copyright {
+		text-align: center;
+		width: 100%;
+		
 	}
 }
 

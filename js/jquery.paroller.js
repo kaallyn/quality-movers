@@ -13,7 +13,7 @@
             return elem.css({'background-position': 'center ' + -bgOffset + 'px'});
         },
         bgHorizontal: function (elem, bgOffset) {
-            return elem.css({'background-position': -bgOffset + 'px' + ' center'});
+            return elem.css({'background-position': -bgOffset + 'px' + ' 40px'});
         },
         vertical: function (elem, elemOffset) {
             return elem.css({
@@ -75,8 +75,8 @@
 
             $(window).on('scroll', function(){
                 var scrolling = $(this).scrollTop();
-                bgOffset = Math.round((offset - scrolling) * factor);
-                transform = Math.round(((offset - (windowHeight / 2) + height) - scrolling) * factor);
+                bgOffset = Math.round((offset - scrolling - 500) * factor);
+                // transform = Math.round(((offset - (windowHeight / 2) + height) - scrolling) * factor);
 
                 if(type == 'background') {
                     if(direction == 'vertical') {
