@@ -294,6 +294,10 @@ footer {
 	font-weight: 400;
 }
 
+footer a {
+	color: #fff;
+}
+
 
 /* PATROLLER*/
 .card {
