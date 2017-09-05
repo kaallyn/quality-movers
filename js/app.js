@@ -38,7 +38,7 @@ $(function () {
 // Scroll events
 jQuery(document).ready(function($){
   var card = $('.check'),
-    offset = 1;
+    offset = .8;
 
   $(window).on('scroll', function(){
     (!window.requestAnimationFrame) 

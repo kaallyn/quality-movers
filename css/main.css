@@ -1,8 +1,10 @@
 /*
 	COLORS:
 	Scooter blue: #32C4DE;
+	darker scooter blue: #2CADC3;
 	Persimmon orange: #F55912;
 	orange-red: e14313;
+
 
 	FONTS:
 	font-family: 'Teko', sans-serif;
@@ -61,7 +63,7 @@ h2 {
 	margin-top: 6px;
 	text-transform: uppercase;
 	font-size: 1.7rem;
-	transition: pulse 300ms ease-in-out;
+	/*transition: pulse 300ms ease-in-out;*/
 }
 
 .btn:hover, .btn:focus, .btn:active {
@@ -453,6 +455,11 @@ footer {
 		text-align: center;
 		width: 100%;
 		
+	}
+
+	.truck-bg {
+		background-size: 250px;
+		/*border: 2px solid red;*/
 	}
 }
 
