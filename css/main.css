@@ -1,10 +1,8 @@
 /*
 	COLORS:
 	Scooter blue: #32C4DE;
-	darker scooter blue: #2CADC3;
+	darker  blue: #2CADC3;
 	Persimmon orange: #F55912;
-	orange-red: e14313;
-
 
 	FONTS:
 	font-family: 'Teko', sans-serif;
@@ -50,7 +48,7 @@ h2 {
 .btn {
 	box-shadow: 0 6px 0px #1E7685;
 	padding: 10px 36px 10px 36px;
-	background: #32C4DE;
+	background-color: #32C4DE;
 	color: white;
 	border: none;
 	position: relative;
@@ -90,12 +88,6 @@ header {
 
 .call {
 	margin: 12px 0 12px 0;
-	
-
-}
-
-.col-xs-4 {
-	background: red;
 }
 
 /* 	HERO SECTION 	*/
@@ -157,7 +149,6 @@ header {
 	font-size: 4.5rem;
 }
 
-/* parallax*/
 .bg {
 	background: url('../images/shutterstock_119369974.jpg') no-repeat center center;
 	background-position: 75% 35%;
@@ -274,7 +265,7 @@ form  {
 }
 
 .form-control:focus {
-	 border-color: #FF9235; 
+	border-color: #FF9235; 
 	outline: 0;
 	box-shadow: inset 0 1px 1px rgba(255,146,53,.075), 0 0 8px rgba(255,146,53,.75);
 }
@@ -334,7 +325,7 @@ footer {
 }
 
 
-
+/* MEDIA QUERIES*/
 
 @media (max-width: 1200px) { 
 	.bg {
@@ -370,7 +361,6 @@ footer {
 
 	.submit .col-xs-6 {
 		width: 100%;
-		background-color: red;
 	}
 
 	.call {
@@ -381,8 +371,7 @@ footer {
 
 	.call-us, .copyright {
 		text-align: center;
-		width: 100%;
-		
+		width: 100%;	
 	}
 
 	.truck-bg {
