@@ -91,6 +91,22 @@ header {
 }
 
 /* 	HERO SECTION 	*/
+video { 
+  z-index: -100;
+  background-size: cover;
+  transition: fadeIn 1s ease-in-out;
+  filter: brightness(1.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: darken;
+  mix-blend-mode: screen;
+  opacity: .59;
+}
 .hero {
 	height: 300px;
  	background-repeat: no-repeat;
@@ -159,7 +175,21 @@ header {
 	top:66px;
 	left:0;
 	z-index: -1;
+
+
+	  /*font-weight: 100;*/
+  background-image: linear-gradient(178deg, rgba(128,208,199,1) 0%, rgba(19,84,122,.7) 100%);
+  
+  background: linear-gradient(90deg, rgba(134,14,39,0.9), rgba(211,31,60,0) );
+  background: linear-gradient(170deg, rgba(134,14,39,1), rgba(211,31,60,.5) );
+  background-image: linear-gradient(to top, rgba(255,8,68,.5) 0%, rgba(255,177,153,.7) 100%);
+  background-image: linear-gradient(80deg, rgba(112,40,228, .5)  0%, rgba(22,178,202, .9)100%);
+  background-image: linear-gradient(0deg, rgba(128,208,199,1) 0%, rgba(255,177,153,.7)100%);
+
+  height: 100vh;
+
 }
+
 
 .jumbotron {
 	height: 75vh;
